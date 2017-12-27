@@ -12,6 +12,8 @@
 		C1C5D3831FE8347200AAD37E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C5D3811FE8347200AAD37E /* Main.storyboard */; };
 		C1C5D3851FE8347200AAD37E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C5D3841FE8347200AAD37E /* Assets.xcassets */; };
 		C1C5D3881FE8347200AAD37E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C5D3861FE8347200AAD37E /* LaunchScreen.storyboard */; };
+		C1C5D3901FEC7F7800AAD37E /* BlazeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5D38F1FEC7F7800AAD37E /* BlazeWebViewController.swift */; };
+		C1C5D3931FEC91EE00AAD37E /* SelectDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5D3921FEC91EE00AAD37E /* SelectDestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C1C5D3841FE8347200AAD37E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1C5D3871FE8347200AAD37E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1C5D3891FE8347200AAD37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C5D38F1FEC7F7800AAD37E /* BlazeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlazeWebViewController.swift; sourceTree = "<group>"; };
+		C1C5D3921FEC91EE00AAD37E /* SelectDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		C1C5D37C1FE8347200AAD37E /* BlazeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C1C5D3911FEC91C500AAD37E /* BlazeMobile */,
 				C1C5D37D1FE8347200AAD37E /* AppDelegate.swift */,
 				C1C5D37F1FE8347200AAD37E /* ViewController.swift */,
+				C1C5D38F1FEC7F7800AAD37E /* BlazeWebViewController.swift */,
 				C1C5D3811FE8347200AAD37E /* Main.storyboard */,
 				C1C5D3841FE8347200AAD37E /* Assets.xcassets */,
 				C1C5D3861FE8347200AAD37E /* LaunchScreen.storyboard */,
 				C1C5D3891FE8347200AAD37E /* Info.plist */,
 			);
 			path = BlazeDemo;
+			sourceTree = "<group>";
+		};
+		C1C5D3911FEC91C500AAD37E /* BlazeMobile */ = {
+			isa = PBXGroup;
+			children = (
+				C1C5D3921FEC91EE00AAD37E /* SelectDestinationViewController.swift */,
+			);
+			path = BlazeMobile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C5D3901FEC7F7800AAD37E /* BlazeWebViewController.swift in Sources */,
+				C1C5D3931FEC91EE00AAD37E /* SelectDestinationViewController.swift in Sources */,
 				C1C5D3801FE8347200AAD37E /* ViewController.swift in Sources */,
 				C1C5D37E1FE8347200AAD37E /* AppDelegate.swift in Sources */,
 			);
@@ -192,7 +208,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Vijay Jambu (HWQTG8XXHS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -249,7 +265,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Vijay Jambu (HWQTG8XXHS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -275,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2JJZ96P8P5;
 				INFOPLIST_FILE = BlazeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CA.BlazeDemo;
@@ -289,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2JJZ96P8P5;
 				INFOPLIST_FILE = BlazeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CA.BlazeDemo;
